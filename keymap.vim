@@ -1,4 +1,4 @@
-" Tabs
+" Tabs Setting
 nmap <Leader>t :tabnext<CR>
 nmap <Leader>T :tabnew 
 nnoremap <Tab> <C-w>w 
