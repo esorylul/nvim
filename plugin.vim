@@ -203,6 +203,18 @@ Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
 " Multiple Plug commands can be written in a single line using | separators
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+" The trigger used to expand a snippet.
+" NOTE: expansion and forward jumping can, but needn't be the same trigger
+if !exists("g:UltiSnipsExpandTrigger")
+    let g:UltiSnipsExpandTrigger = "<S-tab>"
+endif
+
+" The trigger used to display all triggers that could possible
+" match in the current position. Use empty to disable.
+if !exists("g:UltiSnipsListSnippets")
+    let g:UltiSnipsListSnippets = "<c-tab>"
+endif
+
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
