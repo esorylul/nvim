@@ -1,10 +1,5 @@
 {
   "languageserver": {
-    "efm": {
-      "command": "efm-langserver",
-      "args": [],
-      "filetypes": ["vim", "eruby", "markdown", "yaml"]
-    },
    "python": {
     "command": "python",
     "args": [
