@@ -20,7 +20,7 @@ let g:cpp_concepts_highlight = 1
 
 " Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-let g:coc_global_extensions = ['coc-json', 'coc-clangd', 'coc-git', 'coc-vimlsp', 'coc-python']
+let g:coc_global_extensions = ['coc-json', 'coc-clangd', 'coc-git', 'coc-vimlsp', 'coc-python', 'coc-sh']
 
 " TextEdit might fail if hidden is not set.
 set hidden
