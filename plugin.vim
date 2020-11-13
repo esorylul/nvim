@@ -243,6 +243,11 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Unmanaged plugin (manually installed and updated)
 Plug '~/my-prototype-plugin'
 
+" Colorrizer
+Plug 'chrisbra/Colorizer'
+let g:colorizer_auto_color=1
+let g:colorizer_auto_filetype='c,cpp,h,css,html'
+
 " Initialize plugin system
 call plug#end()
 
