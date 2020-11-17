@@ -55,7 +55,7 @@ inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
-inoremap <expr><A-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort
   let col = col('.') - 1
@@ -206,7 +206,7 @@ Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 " The trigger used to expand a snippet.
 " NOTE: expansion and forward jumping can, but needn't be the same trigger
 if !exists("g:UltiSnipsExpandTrigger")
-    let g:UltiSnipsExpandTrigger = "<S-tab>"
+    let g:UltiSnipsExpandTrigger = "<A-tab>"
 endif
 
 " The trigger used to display all triggers that could possible
