@@ -7,9 +7,6 @@
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.config/nvim/plugged')
 
-" Vim Fonts
-Plug 'ryanoasis/vim-devicons'
-
 " Make sure you use single quotes
 " C/C++ Hisghlight
 Plug 'octol/vim-cpp-enhanced-highlight',{'for': ['c','cpp'] }
@@ -192,6 +189,10 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'default'
 let g:airline_powerline_fonts = 1
 
+" Vim Fonts
+Plug 'ryanoasis/vim-devicons'
+
+
 " Theme
 Plug 'morhetz/gruvbox'
 
@@ -238,7 +239,7 @@ Plug 'fatih/vim-go', { 'tag': '*' ,'for': 'go'}
 Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 
 " Plugin outside ~/.vim/plugged with post-update hook
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all', 'on': 'FZF' }
 
 " Unmanaged plugin (manually installed and updated)
 Plug '~/my-prototype-plugin'
