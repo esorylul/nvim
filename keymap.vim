@@ -11,4 +11,4 @@ nmap E :q!<CR>
 " Open Tags & NERDTree 
 map <A-t> :TagbarToggle<CR>
 map <A-d> :NERDTreeToggle<CR>
-
+map <A-s> :FZF<CR>
