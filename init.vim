@@ -20,6 +20,7 @@ set list
 set listchars=tab:\|\ ,trail:▫
 set softtabstop=2
 set tabstop=2
+set clipboard+=unnamedplus
 
 syntax on
 colorscheme gruvbox
