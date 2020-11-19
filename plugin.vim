@@ -7,9 +7,12 @@
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.config/nvim/plugged')
 
+" Vim Fonts
+Plug 'ryanoasis/vim-devicons'
+
 " Make sure you use single quotes
 " C/C++ Hisghlight
-Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'octol/vim-cpp-enhanced-highlight',{'for': ['c','cpp'] }
 let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
@@ -189,9 +192,6 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'default'
 let g:airline_powerline_fonts = 1
 
-" Vim Fonts
-Plug 'ryanoasis/vim-devicons'
-
 " Theme
 Plug 'morhetz/gruvbox'
 
@@ -220,7 +220,7 @@ endif
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 " TagBar
-Plug 'preservim/tagbar'
+Plug 'preservim/tagbar', {'on': 'TagbarToggle'}
 let g:tagbar_ctags_bin = 'ctags'
 
 " Commenter
@@ -232,7 +232,7 @@ Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 
 " Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
-Plug 'fatih/vim-go', { 'tag': '*' }
+Plug 'fatih/vim-go', { 'tag': '*' ,'for': 'go'}
 
 " Plugin options
 Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
@@ -244,9 +244,9 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug '~/my-prototype-plugin'
 
 " Colorrizer
-Plug 'chrisbra/Colorizer'
-let g:colorizer_auto_color=1
-let g:colorizer_auto_filetype='c,cpp,h,css,html'
+Plug 'chrisbra/Colorizer',{'on': 'ColorHighlight'}
+" let g:colorizer_auto_color=1
+" let g:colorizer_auto_filetype='c,cpp,h,css,html'
 
 " Initialize plugin system
 call plug#end()

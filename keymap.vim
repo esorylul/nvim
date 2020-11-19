@@ -12,3 +12,4 @@ nmap E :q!<CR>
 map <A-t> :TagbarToggle<CR>
 map <A-d> :NERDTreeToggle<CR>
 map <A-s> :FZF<CR>
+map <A-c> :ColorHighlight<CR>
