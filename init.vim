@@ -7,7 +7,7 @@
 
 
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
-				silent !git clone https://github.com/junegunn/vim-plug ~/.config/nvim/autoload/vim-plug && cd ~/.config/nvim/autoload && cp ~/.config/nvim/autoload/vim-plug/plug.vim ./  && rm -rf vim-plug
+				silent !git clone https://github.com.cnpmjs.org/junegunn/vim-plug ~/.config/nvim/autoload/vim-plug && cd ~/.config/nvim/autoload && cp ~/.config/nvim/autoload/vim-plug/plug.vim ./  && rm -rf vim-plug
 				autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 source ~/.config/nvim/keymap.vim
@@ -24,6 +24,5 @@ set clipboard+=unnamedplus
 
 syntax on
 colorscheme gruvbox
-
 
 
