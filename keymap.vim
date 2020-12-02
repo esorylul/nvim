@@ -15,3 +15,11 @@ map <A-f> :FZF<CR>
 map <A-c> :ColorHighlight<CR>
 map <A-x> :ColorClear<CR>
 
+
+nnoremap r :call COmpileRunGcc()<CR>
+func! COmpileRunGcc()
+				exec "w"
+				if &filetype == 'sh'
+								:!time bash %
+				endif
+endfunc
