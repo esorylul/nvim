@@ -195,6 +195,7 @@ Plug 'ryanoasis/vim-devicons'
 
 " Theme
 Plug 'morhetz/gruvbox'
+Plug 'arcticicestudio/nord-vim'
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'

@@ -15,6 +15,7 @@ source ~/.config/nvim/plugin.vim
 				
 set number
 set cursorline
+set t_Co=256
 set relativenumber
 set list
 set listchars=tab:\|\ ,trail:▫
@@ -22,7 +23,8 @@ set softtabstop=2
 set tabstop=2
 set clipboard+=unnamedplus
 
-syntax on
-colorscheme gruvbox
+"colorscheme gruvbox
+colorscheme nord
+highlight Normal ctermbg=black
 
 
