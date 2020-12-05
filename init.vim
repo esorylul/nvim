@@ -26,5 +26,6 @@ set clipboard+=unnamedplus
 "colorscheme gruvbox
 colorscheme nord
 highlight Normal ctermbg=black
+highlight Visual ctermbg=DarkBlue ctermfg=White
 
 
