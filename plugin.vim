@@ -253,6 +253,9 @@ Plug 'chrisbra/Colorizer',{'on': 'ColorHighlight'}
 " let g:colorizer_auto_color=1
 " let g:colorizer_auto_filetype='c,cpp,h,css,html'
 
+" Vim-Toml
+Plug 'cespare/vim-toml'
+
 " Initialize plugin system
 call plug#end()
 
