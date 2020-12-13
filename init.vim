@@ -12,7 +12,7 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 source ~/.config/nvim/keymap.vim
 source ~/.config/nvim/plugin.vim 
-				
+set termguicolors	
 set number
 set cursorline
 set t_Co=256
@@ -23,9 +23,6 @@ set softtabstop=2
 set tabstop=2
 set clipboard+=unnamedplus
 
-"colorscheme gruvbox
-colorscheme nord
-highlight Normal ctermbg=black
-highlight Visual ctermbg=DarkBlue ctermfg=White
-
-
+colorscheme gruvbox
+"colorscheme nord
+"colorscheme palenight
