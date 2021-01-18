@@ -18,10 +18,19 @@ map <A-x> :ColorClear<CR>
 
 nnoremap r :call COmpileRunGcc()<CR>
 func! COmpileRunGcc()
-				exec "w"
-				if &filetype == 'sh'
-								:!time bash %
-				endif
+	exec "w"
+	if &filetype == 'sh'
+		:!time bash %
+	elseif &filetype == 'c'
+		exec ":!gcc % -o %<"
+		exec ":!time ./%<"
+	elseif &filetype == 'cpp'
+		exec ":!g++ % -o %<"
+		exec ":!time ./%<"
+	elseif &filetype == 'java'
+		exec ":!javac %"
+		exec ":!time java %<"
+	endif
 endfunc
 
 "autocmd Filetype markdown map <leader>w yiWi[<esc>Ea](<esc>pa)
